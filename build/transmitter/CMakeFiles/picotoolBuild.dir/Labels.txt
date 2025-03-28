@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+C:/Pico/Telemetry/build/transmitter/CMakeFiles/picotoolBuild
+C:/Pico/Telemetry/build/transmitter/CMakeFiles/picotoolBuild.rule
+C:/Pico/Telemetry/build/transmitter/CMakeFiles/picotoolBuild-complete.rule
+C:/Pico/Telemetry/build/transmitter/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+C:/Pico/Telemetry/build/transmitter/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+C:/Pico/Telemetry/build/transmitter/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+C:/Pico/Telemetry/build/transmitter/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+C:/Pico/Telemetry/build/transmitter/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+C:/Pico/Telemetry/build/transmitter/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+C:/Pico/Telemetry/build/transmitter/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+C:/Pico/Telemetry/build/transmitter/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule
