@@ -52,7 +52,7 @@ void loop() {
     printf("Transmission failed\n");
   }
 
-  sleep_ms(2000); // Send every 2 seconds
+  //sleep_ms(0); // Send every 2 seconds
 }
 
 int main() {

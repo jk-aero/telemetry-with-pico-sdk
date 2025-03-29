@@ -88,6 +88,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Pico/pico-sdk/src/rp2_common/pico_atomic/include"
   "C:/Pico/pico-sdk/lib/tinyusb/src"
   "C:/Pico/Telemetry/RF24/utility/rp2/../.."
+  "C:/Pico/Telemetry/electricui-embedded/src"
+  "C:/Pico/Telemetry/electricui-embedded/src/transports"
   "C:/Pico/pico-sdk/src/common/pico_stdlib_headers/include"
   "C:/Pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "C:/Pico/pico-sdk/src/common/pico_base_headers/include"

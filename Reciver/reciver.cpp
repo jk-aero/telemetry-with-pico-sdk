@@ -1,6 +1,16 @@
 #include "pico/stdlib.h"
 #include <RF24.h>
 
+
+#include "hardware/gpio.h"
+#include "hardware/uart.h"
+#include "hardware/timer.h"
+
+#include "pico/binary_info.h"
+#include "pico/unique_id.h"
+
+#include "electricui.h"
+
 RF24 radio(14, 15); // CE, CSN
 SPI my_spi;
 

@@ -198,6 +198,9 @@ C:/Pico/Telemetry/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
 C:/Pico/Telemetry/build/transmitter/CMakeFiles/transmitter.dir
 C:/Pico/Telemetry/build/transmitter/CMakeFiles/edit_cache.dir
 C:/Pico/Telemetry/build/transmitter/CMakeFiles/rebuild_cache.dir
+C:/Pico/Telemetry/build/electricui-embedded/CMakeFiles/electricui.dir
+C:/Pico/Telemetry/build/electricui-embedded/CMakeFiles/edit_cache.dir
+C:/Pico/Telemetry/build/electricui-embedded/CMakeFiles/rebuild_cache.dir
 C:/Pico/Telemetry/build/Reciver/CMakeFiles/reciver.dir
 C:/Pico/Telemetry/build/Reciver/CMakeFiles/edit_cache.dir
 C:/Pico/Telemetry/build/Reciver/CMakeFiles/rebuild_cache.dir

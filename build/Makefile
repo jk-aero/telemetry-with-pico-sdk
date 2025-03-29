@@ -184,6 +184,19 @@ transmitter\fast:
 .PHONY : transmitter\fast
 
 #=============================================================================
+# Target rules for targets named electricui
+
+# Build rule for target.
+electricui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) electricui
+.PHONY : electricui
+
+# fast build rule for target.
+electricui\fast:
+	$(MAKE) $(MAKESILENT) -f electricui-embedded\CMakeFiles\electricui.dir\build.make /nologo -$(MAKEFLAGS) electricui-embedded\CMakeFiles\electricui.dir\build
+.PHONY : electricui\fast
+
+#=============================================================================
 # Target rules for targets named reciver
 
 # Build rule for target.
@@ -209,6 +222,7 @@ help:
 	@echo ... pioasmBuild
 	@echo ... bs2_default
 	@echo ... bs2_default_library
+	@echo ... electricui
 	@echo ... reciver
 	@echo ... transmitter
 .PHONY : help

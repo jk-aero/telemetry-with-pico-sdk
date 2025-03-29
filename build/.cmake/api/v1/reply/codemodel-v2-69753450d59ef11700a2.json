@@ -10,7 +10,8 @@
 					[
 						1,
 						96,
-						97
+						97,
+						98
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -976,7 +977,7 @@
 					"targetIndexes" : 
 					[
 						3,
-						4
+						5
 					]
 				},
 				{
@@ -1197,7 +1198,22 @@
 					"source" : "transmitter",
 					"targetIndexes" : 
 					[
-						6
+						7
+					]
+				},
+				{
+					"build" : "electricui-embedded",
+					"jsonFile" : "directory-electricui-embedded-Debug-8eae1196d7a983618ee2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "electricui-embedded",
+					"targetIndexes" : 
+					[
+						4
 					]
 				},
 				{
@@ -1212,7 +1228,7 @@
 					"source" : "Reciver",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				}
 			],
@@ -1222,19 +1238,20 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"directoryIndexes" : 
 					[
 						0,
 						96,
-						97
+						98
 					],
 					"name" : "Telemetry",
 					"targetIndexes" : 
 					[
-						5,
-						6
+						6,
+						7
 					]
 				},
 				{
@@ -1344,6 +1361,18 @@
 						1,
 						2,
 						3,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						97
+					],
+					"name" : "electricui-embedded",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
 						4
 					]
 				}
@@ -1379,6 +1408,13 @@
 					"projectIndex" : 1
 				},
 				{
+					"directoryIndex" : 97,
+					"id" : "electricui::@f930b5a5e4c0acca1466",
+					"jsonFile" : "target-electricui-Debug-b53ddc416dcafe2d11d4.json",
+					"name" : "electricui",
+					"projectIndex" : 2
+				},
+				{
 					"directoryIndex" : 77,
 					"id" : "pioasmBuild::@c2fb4f534018e64680d5",
 					"jsonFile" : "target-pioasmBuild-Debug-6f6687687f4b6939c344.json",
@@ -1386,9 +1422,9 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 97,
+					"directoryIndex" : 98,
 					"id" : "reciver::@ab52d991703508f14d43",
-					"jsonFile" : "target-reciver-Debug-eaf602a8c33fb6fcf42f.json",
+					"jsonFile" : "target-reciver-Debug-15052ed3c7bc822807e8.json",
 					"name" : "reciver",
 					"projectIndex" : 0
 				},

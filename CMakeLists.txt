@@ -18,5 +18,6 @@ pico_sdk_init()
 #add_compile_options(-Wall -Wno-unused-function)
 
 add_subdirectory(transmitter)
+add_subdirectory(electricui-embedded)
 add_subdirectory(Reciver)
 include(RF24/CMakeLists.txt)
