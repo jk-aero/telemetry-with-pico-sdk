@@ -260,6 +260,10 @@
 				},
 				{
 					"backtrace" : 5,
+					"define" : "LIB_PICO_STDIO_UART=1"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "LIB_PICO_STDIO_USB=1"
 				},
 				{
@@ -601,6 +605,11 @@
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
+					"path" : "C:/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
 					"path" : "C:/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/include"
 				},
 				{
@@ -664,9 +673,9 @@
 			[
 				0,
 				50,
-				82,
 				83,
-				84
+				84,
+				85
 			]
 		},
 		{
@@ -828,6 +837,10 @@
 				},
 				{
 					"backtrace" : 5,
+					"define" : "LIB_PICO_STDIO_UART=1"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "LIB_PICO_STDIO_USB=1"
 				},
 				{
@@ -1165,6 +1178,11 @@
 					"backtrace" : 5,
 					"isSystem" : true,
 					"path" : "C:/Pico/pico-sdk/src/rp2_common/pico_stdio/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
 				},
 				{
 					"backtrace" : 5,
@@ -1298,7 +1316,8 @@
 				78,
 				79,
 				80,
-				81
+				81,
+				82
 			]
 		},
 		{
@@ -1457,6 +1476,10 @@
 				{
 					"backtrace" : 5,
 					"define" : "LIB_PICO_STDIO=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LIB_PICO_STDIO_UART=1"
 				},
 				{
 					"backtrace" : 5,
@@ -1797,6 +1820,11 @@
 					"backtrace" : 5,
 					"isSystem" : true,
 					"path" : "C:/Pico/pico-sdk/src/rp2_common/pico_stdio/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
 				},
 				{
 					"backtrace" : 5,
@@ -2819,7 +2847,8 @@
 				81,
 				82,
 				83,
-				84
+				84,
+				85
 			]
 		},
 		{
@@ -3176,6 +3205,12 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 1,
 			"path" : "C:/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c",
 			"sourceGroupIndex" : 0
 		},
 		{

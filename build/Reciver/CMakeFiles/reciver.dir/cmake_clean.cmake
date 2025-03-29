@@ -140,6 +140,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj.d"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d"
+  "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+  "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj.d"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
