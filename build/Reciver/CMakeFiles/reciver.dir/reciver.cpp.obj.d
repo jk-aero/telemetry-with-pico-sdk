@@ -65,6 +65,7 @@ Reciver\CMakeFiles\reciver.dir\reciver.cpp.obj: \
  C:\Pico\pico-sdk\src\rp2_common\hardware_resets\include/hardware/resets.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/resets.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/resets.h \
+ C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
  C:\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
  c:\pico\telemetry\rf24\rf24.h c:\pico\telemetry\rf24\RF24_config.h \
  c:\pico\telemetry\rf24\utility/rp2/RF24_arch_config.h \
@@ -94,4 +95,16 @@ Reciver\CMakeFiles\reciver.dir\reciver.cpp.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\string.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_locale.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\strings.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\string.h
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\string.h \
+ C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info.h \
+ C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/defs.h \
+ C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/structure.h \
+ C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/code.h \
+ C:\Pico\pico-sdk\src\rp2_common\pico_unique_id\include/pico/unique_id.h \
+ C:\Pico\Telemetry\electricui-embedded\src/electricui.h \
+ C:\Pico\Telemetry\electricui-embedded\src/eui_config.h \
+ C:\Pico\Telemetry\electricui-embedded\src/transports/eui_binary_transport.h \
+ c:\pico\telemetry\electricui-embedded\src\eui_types.h \
+ C:\Pico\Telemetry\electricui-embedded\src/transports/eui_transport_types.h \
+ C:\Pico\Telemetry\electricui-embedded\src/eui_macro.h \
+ C:\Pico\Telemetry\electricui-embedded\src/eui_types.h

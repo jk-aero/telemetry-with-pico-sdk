@@ -86,6 +86,7 @@ Reciver\CMakeFiles\reciver.dir\__\RF24\RF24.cpp.obj: \
  C:\Pico\pico-sdk\src\rp2_common\hardware_resets\include/hardware/resets.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/resets.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/resets.h \
+ C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
  C:\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
  C:\Pico\pico-sdk\src\rp2_common\hardware_spi\include/hardware/spi.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/spi.h \
