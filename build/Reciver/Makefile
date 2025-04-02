@@ -1953,6 +1953,36 @@ C_\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj:
 	cd C:\Pico\Telemetry\build\Reciver
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
 
+C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.obj: C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
+.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.obj
+
+# target to build an object file
+C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj:
+	cd C:\Pico\Telemetry\build
+	$(MAKE) $(MAKESILENT) -f Reciver\CMakeFiles\reciver.dir\build.make /nologo -$(MAKEFLAGS) Reciver\CMakeFiles\reciver.dir\C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
+	cd C:\Pico\Telemetry\build\Reciver
+.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
+
+C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.i: C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.i
+
+# target to preprocess a source file
+C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i:
+	cd C:\Pico\Telemetry\build
+	$(MAKE) $(MAKESILENT) -f Reciver\CMakeFiles\reciver.dir\build.make /nologo -$(MAKEFLAGS) Reciver\CMakeFiles\reciver.dir\C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+	cd C:\Pico\Telemetry\build\Reciver
+.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+
+C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.s: C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.s
+
+# target to generate assembly for a file
+C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s:
+	cd C:\Pico\Telemetry\build
+	$(MAKE) $(MAKESILENT) -f Reciver\CMakeFiles\reciver.dir\build.make /nologo -$(MAKEFLAGS) Reciver\CMakeFiles\reciver.dir\C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+	cd C:\Pico\Telemetry\build\Reciver
+.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+
 C_\Pico\pico-sdk\src\rp2_common\pico_platform_panic\panic.obj: C_\Pico\pico-sdk\src\rp2_common\pico_platform_panic\panic.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_platform_panic\panic.obj
 
@@ -2684,6 +2714,9 @@ help:
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj
+	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
+	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.obj
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s

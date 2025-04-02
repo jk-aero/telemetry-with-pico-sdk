@@ -14,45 +14,57 @@ struct DataPacket {
 
 DataPacket data;
 
-void setup() {
+//time variables to keep the dt
+uint32_t current_time =0;
+uint32_t elapsed_time =0;
+uint32_t prev_time=0;
+
+bool setup() {
   my_spi.begin(spi0, 18, 19, 16);
   sleep_ms(3000);
-  
   uint8_t address[][6] = {"1Node", "2Node"};
   
-  if (!radio.begin(&my_spi)) {
-    printf("Radio hardware not responding!\n");
-    while(1) {}
+  if (!radio.begin(&my_spi))
+  {
+    //printf("Radio hardware not responding!\n");
+    return 0;
   }
 
   radio.setPALevel(RF24_PA_MAX);
-  radio.setDataRate(RF24_2MBPS);
+  radio.setDataRate(RF24_1MBPS);
   radio.setPayloadSize(sizeof(DataPacket)); // Set payload to struct size
   radio.openWritingPipe(address[0]);
   radio.stopListening();
   
-  printf("Multi-variable transmitter ready!\n");
+  return 1;
 }
 
-void loop() {
+void send_data() {
   // Update all variables
+  
+  prev_time = time_us_64();
   data.temperature += 0.5;
   data.humidity = (data.humidity + 5) % 100;
   data.status = !data.status;
   snprintf(data.message, sizeof(data.message), "Count: %d", data.humidity);
   
   bool report = radio.write(&data, sizeof(data));
+  current_time = time_us_64();
+  elapsed_time = current_time - prev_time;
+  prev_time = current_time;
   
   if (report) {
-   // printf("Sent - Temp: %.1fC, Hum: %d%%, Status: %d, Msg: %s\n", 
+       // printf("Sent - Temp: %.1fC, Hum: %d%%, Status: %d, Msg: %s\n", 
        //    data.temperature, data.humidity, data.status, data.message);
 
-       printf("sent\n");
-  } else {
+       printf("sent ---> elapsed time: %lu \n",elapsed_time);
+  } 
+  
+  else {
     printf("Transmission failed\n");
   }
 
-  //sleep_ms(0); // Send every 2 seconds
+  
 }
 
 int main() {
@@ -61,16 +73,21 @@ int main() {
   gpio_set_function( 0, GPIO_FUNC_UART );
   gpio_set_function( 1, GPIO_FUNC_UART );
 
-  setup();
+  bool device_found=setup();
   
   // Initialize data
   data.temperature = 20.0;
   data.humidity = 40;
   data.status = true;
   strncpy(data.message, "Hello", sizeof(data.message));
+
   
-  while (true) {
-    loop();
+  while (device_found) {
+    
+    send_data();
+    
+    
+  
   }
   return 0;
 }

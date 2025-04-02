@@ -124,6 +124,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.obj"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.obj.d"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+  "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+  "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj.d"
   "CMakeFiles/reciver.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"

@@ -5,6 +5,7 @@
 #include "hardware/gpio.h"
 #include "hardware/uart.h"
 #include "hardware/timer.h"
+#include "pico/multicore.h"
 
 #include "pico/binary_info.h"
 #include "pico/unique_id.h"
@@ -23,6 +24,10 @@ struct DataPacket {
 };
 
 DataPacket receivedData;
+
+
+
+
 
 
 void eui_write( uint8_t *data, uint16_t size );
@@ -44,27 +49,28 @@ void eui_write( uint8_t *data, uint16_t size )
 }
 
 
-void setup() {
+bool setup() {
   my_spi.begin(spi0, 18, 19, 16);
   sleep_ms(3000);
   
   uint8_t address[][6] = {"1Node", "2Node"};
   
-  if (!radio.begin(&my_spi)) {
-    printf("Radio hardware not responding!\n");
-    while(1) {}
+  if (!radio.begin(&my_spi)) 
+  {
+    //printf("Radio hardware not responding!\n");
+    return 0;
   }
 
   radio.setPALevel(RF24_PA_MAX);
-  radio.setDataRate(RF24_2MBPS);
+  radio.setDataRate(RF24_1MBPS);
   radio.setPayloadSize(sizeof(DataPacket));
   radio.openReadingPipe(1, address[0]);
   radio.startListening();
   
-  printf("Multi-variable receiver ready!\n");
+  return 1;
 }
 
-void loop() {
+bool loop() {
   if (radio.available()) {
     radio.read(&receivedData, sizeof(receivedData));
     printf("Received - Temp: %.1fC, Hum: %d%%, Status: %d, Msg: %s\n",
@@ -72,16 +78,36 @@ void loop() {
            receivedData.humidity,
            receivedData.status,
            receivedData.message);
+    return 1;
   }
+  return 0;
 }
 
+
+void core1_entry() {
+
+}
+
+
+
+// this core handles the eui 
 int main() {
   stdio_init_all();
-  setup();
+
+  
+
+  
+  const uint LED_PIN = 25; // Built-in LED on Raspberry Pi Pico
+  gpio_init(LED_PIN);
+  gpio_set_dir(LED_PIN, GPIO_OUT);
+  bool device_found=setup();  
+  
   
   uart_init( uart0, 115200 );
   gpio_set_function( 0, GPIO_FUNC_UART );
   gpio_set_function( 1, GPIO_FUNC_UART );
+
+  multicore_launch_core1(core1_entry); // this handles the nrf  
 
 
   // Setup eUI's interface and tracked variables
@@ -94,12 +120,27 @@ int main() {
   eui_setup_identifier((char *)&board_id.id, PICO_UNIQUE_BOARD_ID_SIZE_BYTES );
 
 
-  while (true) {
+  
+
+ 
+        
+   
+  
+  while(true)
+  {    
     while( uart_is_readable( uart0 ) )
-        {
-            eui_parse( uart_getc( uart0 ), &serial_comms );
-        }
-    loop();
+    {
+        eui_parse( uart_getc( uart0 ), &serial_comms );
+        printf("to pc");
+        gpio_put(LED_PIN, 1);
+    }
+  
+    if (loop()){
+      //gpio_put(LED_PIN, 1);
+    }
+    else{gpio_put(LED_PIN, 0);
+    //printf("failed\n");
+    }
   }
-  return 0;
+
 }

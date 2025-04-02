@@ -1,7 +1,6 @@
-Reciver\CMakeFiles\reciver.dir\C_\Pico\pico-sdk\src\rp2_common\pico_flash\flash.c.obj: \
- C:\Pico\pico-sdk\src\rp2_common\pico_flash\flash.c \
- C:\Pico\pico-sdk\src\rp2_common\pico_flash\include/pico/flash.h \
- C:\Pico\pico-sdk\src\common\pico_base_headers\include/pico.h \
+Reciver\CMakeFiles\reciver.dir\C_\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj: \
+ C:\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c \
+ C:\Pico\pico-sdk\src\rp2_common\pico_multicore\include/pico/multicore.h \
  C:\Pico\pico-sdk\src\common\pico_base_headers\include/pico/types.h \
  C:\Pico\pico-sdk\src\common\pico_base_headers\include/pico/assert.h \
  c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h \
@@ -18,6 +17,11 @@ Reciver\CMakeFiles\reciver.dir\C_\Pico\pico-sdk\src\rp2_common\pico_flash\flash.
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_intsup.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_stdint.h \
  c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/sync.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/sem.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
+ C:\Pico\pico-sdk\src\common\pico_base_headers\include/pico.h \
+ C:\Pico\pico-sdk\src\common\pico_base_headers\include/pico/types.h \
  C:\Pico\Telemetry\build\generated\pico_base/pico/version.h \
  C:\Pico\pico-sdk\src\common\pico_base_headers\include/pico/config.h \
  C:\Pico\Telemetry\build\generated\pico_base/pico/config_autogen.h \
@@ -27,25 +31,30 @@ Reciver\CMakeFiles\reciver.dir\C_\Pico\pico-sdk\src\rp2_common\pico_flash\flash.
  C:\Pico\pico-sdk\src\rp2_common\pico_platform_compiler\include/pico/platform/compiler.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/platform_defs.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\cdefs.h \
- C:\Pico\pico-sdk\src\common\pico_base_headers\include/pico/types.h \
  C:\Pico\pico-sdk\src\rp2_common\pico_platform_sections\include/pico/platform/sections.h \
  C:\Pico\pico-sdk\src\rp2_common\pico_platform_panic\include/pico/platform/panic.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/addressmap.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/sio.h \
  C:\Pico\pico-sdk\src\common\pico_base_headers\include/pico/error.h \
- C:\Pico\pico-sdk\src\rp2_common\hardware_sync\include/hardware/sync.h \
- C:\Pico\pico-sdk\src\rp2_common\hardware_base\include/hardware/address_mapped.h \
- C:\Pico\pico-sdk\src\rp2_common\hardware_sync_spin_lock\include/hardware/sync/spin_lock.h \
- C:\Pico\pico-sdk\src\rp2_common\pico_multicore\include/pico/multicore.h \
- C:\Pico\pico-sdk\src\common\pico_sync\include/pico/sync.h \
- C:\Pico\pico-sdk\src\common\pico_sync\include/pico/sem.h \
- C:\Pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
  C:\Pico\pico-sdk\src\common\pico_time\include/pico/time.h \
  C:\Pico\pico-sdk\src\rp2_common\hardware_timer\include/hardware/timer.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/timer.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_base\include/hardware/address_mapped.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/timer.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/intctrl.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_sync\include/hardware/sync.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_sync_spin_lock\include/hardware/sync/spin_lock.h \
  C:\Pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
  C:\Pico\pico-sdk\src\common\pico_sync\include/pico/critical_section.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/sio.h \
- C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/interp.h
+ C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/interp.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_irq\include/hardware/irq.h \
+ C:\Pico\pico-sdk\src\rp2040\pico_platform\include/pico/platform/cpu_regs.h \
+ C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/m0plus.h \
+ C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/m0plus.h \
+ C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/nvic.h \
+ C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/scb.h \
+ C:\Pico\pico-sdk\src\rp2_common\pico_runtime_init\include/pico/runtime_init.h \
+ C:\Pico\pico-sdk\src\rp2_common\pico_runtime\include/pico/runtime.h \
+ C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/psm.h \
+ C:\Pico\pico-sdk\src\common\hardware_claim\include/hardware/claim.h

@@ -1,7 +1,7 @@
 add_executable( reciver reciver.cpp)
 
 
-target_link_libraries(reciver pico_stdlib hardware_spi  RF24 pico_unique_id
+target_link_libraries(reciver pico_stdlib hardware_spi  RF24 pico_unique_id pico_multicore
 electricui)
 
 pico_enable_stdio_usb(reciver 1)

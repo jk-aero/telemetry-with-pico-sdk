@@ -96,6 +96,14 @@ Reciver\CMakeFiles\reciver.dir\reciver.cpp.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_locale.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\strings.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\string.h \
+ C:\Pico\pico-sdk\src\rp2_common\pico_multicore\include/pico/multicore.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/sync.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/sem.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_sync\include/hardware/sync.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_sync_spin_lock\include/hardware/sync/spin_lock.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/critical_section.h \
  C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info.h \
  C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/defs.h \
  C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/structure.h \

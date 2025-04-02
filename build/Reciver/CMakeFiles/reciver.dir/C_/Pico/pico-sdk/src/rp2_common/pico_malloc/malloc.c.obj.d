@@ -40,4 +40,14 @@ Reciver\CMakeFiles\reciver.dir\C_\Pico\pico-sdk\src\rp2_common\pico_malloc\mallo
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/addressmap.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/sio.h \
  C:\Pico\pico-sdk\src\common\pico_base_headers\include/pico/error.h \
- C:\Pico\pico-sdk\src\rp2_common\pico_malloc\include/pico/malloc.h
+ C:\Pico\pico-sdk\src\rp2_common\pico_malloc\include/pico/malloc.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
+ C:\Pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
+ C:\Pico\pico-sdk\src\common\pico_time\include/pico/time.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_timer\include/hardware/timer.h \
+ C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/timer.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_base\include/hardware/address_mapped.h \
+ C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/timer.h \
+ C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/intctrl.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_sync\include/hardware/sync.h \
+ C:\Pico\pico-sdk\src\rp2_common\hardware_sync_spin_lock\include/hardware/sync/spin_lock.h
